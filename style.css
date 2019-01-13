@@ -17,16 +17,29 @@ html, body {
 body {
   background-image: url("biet.jpg");
   background-size: cover;
-  background-position: center
+  background-position: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
   margin: 0;
-  font-size: 200px;
+  font-size: 100px;
   font-family: titleFont;
   color: white;
   text-shadow: -1px 0 1px black, 0 1px 1px black, 1px 0 1px black, 0 -1px 1px black;
   text-decoration: underline;
+}
+
+@media (min-width: 450px) {
+  h1 {
+    font-size: 200px;
+  }
 }
 
 p {
