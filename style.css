@@ -1,10 +1,15 @@
+@font-face {
+  font-family: titleFont;
+  src: url(GreatVibes-Regular.ttf);
+}
+
 html, body {
   width: 100%;
   min-width: 100%;
   height: 100%;
   min-height: 100%;
-  text-align: right;
-  vertical-align: bottom;
+  text-align: center;
+  vertical-align: center;
   margin: 0;
   padding: 0;
 }
@@ -13,6 +18,15 @@ body {
   background-image: url("biet.jpg");
   background-size: cover;
   background-position: center
+}
+
+h1 {
+  margin: 0;
+  font-size: 200px;
+  font-family: titleFont;
+  color: white;
+  text-shadow: -1px 0 1px black, 0 1px 1px black, 1px 0 1px black, 0 -1px 1px black;
+  text-decoration: underline;
 }
 
 p {
