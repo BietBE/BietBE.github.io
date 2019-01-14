@@ -1,6 +1,7 @@
 @font-face {
   font-family: titleFont;
-  src: url(GreatVibes-Regular.ttf);
+  src: url('/fonts/GreatVibes-Regular.woff') format('woff'),
+       url('/fonts/GreatVibes-Regular.ttf')  format('truetype');
 }
 
 html, body {
@@ -15,7 +16,7 @@ html, body {
 }
 
 body {
-  background-image: url("biet.jpg");
+  background-image: url("/img/biet.jpg");
   background-size: cover;
   background-position: center;
   display: -webkit-box;
@@ -49,7 +50,7 @@ h1 {
   }
 }
 
-p {
+#credits {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -58,4 +59,12 @@ p {
   color: white;
   background-color: #000000aa;
   font-size: 0.8em;
+}
+
+#credits a {
+  color: white;
+}
+
+#credits a:hover {
+  color: purple;
 }
